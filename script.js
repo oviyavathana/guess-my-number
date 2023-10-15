@@ -19,6 +19,7 @@ document.querySelector(".btn-check").addEventListener("click", function () {
     displayMessage("Please Enter a Number");
   } else if (guess == secretNumber) {
     displayMessage("Your Guess is correct 🎉");
+    document.querySelector("body").style.backgroundColor = "#60b347";
     if (score > highScore) {
       highScore = score;
       document.querySelector(".highscore").textContent = score;
